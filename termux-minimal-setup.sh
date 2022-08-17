@@ -4,7 +4,10 @@
 yes | pkg update -y
 
 # Install dependencies
-pkg install busybox termux-services dropbear wget
+pkg install busybox termux-services dropbear wget file
+
+# Setup busybox
+busybox --install -s $PREFIX/bin
 
 # Starting services daemon
 souce $PREFIX/etc/profile.d/start-services.sh
