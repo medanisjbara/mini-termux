@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Update
 yes | pkg update -y
 
