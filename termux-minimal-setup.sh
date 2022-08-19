@@ -12,7 +12,7 @@ pkg install busybox termux-services dropbear wget file
 busybox --install -s $PREFIX/bin
 
 # Starting services daemon
-souce $PREFIX/etc/profile.d/start-services.sh
+source $PREFIX/etc/profile.d/start-services.sh
 
 # sftp server
 wget -O $PREFIX/libexec/sftp-server "https://raw.githubusercontent.com/medanisjbara/Termux-minimal-setup/master/sftp-server-$(uname -m)"
